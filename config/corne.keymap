@@ -231,7 +231,7 @@
         };
 
         ComboBackslagPipe {
-            bindings = <&kp LA(LC(NON_US_BSLH))>;
+            bindings = <&kp LC(LA(NON_US_BSLH))>;
             key-positions = <16 29>;
         };
 
