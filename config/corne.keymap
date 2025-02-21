@@ -384,5 +384,14 @@
 
             label = "L03_Connection";
         };
+
+        L04_Test {
+            bindings = <
+&kp SEMI         &kp APOS         &kp BSLH              &kp COMMA  &kp DOT              &kp FSLH    &kp GRAVE  &trans  &trans  &trans  &trans  &trans
+&kp NON_US_HASH  &kp NON_US_BSLH  &kp NON_US_BACKSLASH  &kp INT7   &kp INTERNATIONAL_8  &trans      &trans     &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans                &trans     &trans               &trans      &trans     &trans  &trans  &trans  &trans  &trans
+                                                        &trans     &trans               &trans      &trans     &trans  &trans
+            >;
+        };
     };
 };
