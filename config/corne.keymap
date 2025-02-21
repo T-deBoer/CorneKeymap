@@ -296,17 +296,17 @@
         };
 
         ComboExcl {
-            bindings = <&kp EXCL>;
+            bindings = <&kp LS(N1)>;
             key-positions = <7 8 21>;
         };
 
         ComboQMark {
-            bindings = <&kp QMARK>;
+            bindings = <&kp LS(MINUS)>;
             key-positions = <8 9 19>;
         };
 
         ComboAT {
-            bindings = <&kp AT>;
+            bindings = <&kp RA(N2)>;
             key-positions = <13 16>;
         };
 
