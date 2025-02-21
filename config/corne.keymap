@@ -231,7 +231,7 @@
         };
 
         ComboBackslagPipe {
-            bindings = <&kp LC(LA(NON_US_BSLH))>;
+            bindings = <&kp RA(NON_US_BSLH)>;
             key-positions = <16 29>;
         };
 
@@ -316,8 +316,8 @@
         };
 
         ComboLBrace {
-            bindings = <&kp RA(LEFT_BRACE)>;
-            key-positions = <14 26>;
+            bindings = <&kp RA(N7)>;
+            key-positions = <15 27>;
         };
 
         Combo_Umlaut {
