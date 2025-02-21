@@ -5,67 +5,382 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    combos {
+        compatible = "zmk,combos";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-                        display-name = "Base";
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-                        >;
-                };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        display-name = "Lower";
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        display-name = "Raise";
-                        bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
-                        >;
-                };
-
-                extra_1 {
-                        status = "reserved";
-                };
-
-                extra_2 {
-                        status = "reserved";
-                };
-
-                extra_3 {
-                        status = "reserved";
-                };
+        ComboESC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
+
+        ComboN1 {
+            bindings = <&kp N1>;
+            key-positions = <1 13>;
+        };
+
+        ComboN2 {
+            bindings = <&kp N2>;
+            key-positions = <2 14>;
+        };
+
+        ComboN3 {
+            bindings = <&kp N3>;
+            key-positions = <3 15>;
+        };
+
+        ComboN4 {
+            bindings = <&kp N4>;
+            key-positions = <4 16>;
+        };
+
+        ComboN5 {
+            bindings = <&kp N5>;
+            key-positions = <5 17>;
+        };
+
+        ComboN6 {
+            bindings = <&kp N6>;
+            key-positions = <6 18>;
+        };
+
+        ComboN7 {
+            bindings = <&kp N7>;
+            key-positions = <7 19>;
+        };
+
+        ComboN8 {
+            bindings = <&kp N8>;
+            key-positions = <8 20>;
+        };
+
+        ComboN9 {
+            bindings = <&kp N9>;
+            key-positions = <9 21>;
+        };
+
+        ComboN0 {
+            bindings = <&kp N0>;
+            key-positions = <10 22>;
+        };
+
+        Combo+ {
+            bindings = <&kp MINUS>;
+            key-positions = <11 23>;
+        };
+
+        ComboGrTi {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 25>;
+        };
+
+        ComboLPar {
+            bindings = <&kp LPAR>;
+            key-positions = <28 16>;
+        };
+
+        ComboLBrackBrace {
+            bindings = <&kp RA(N8)>;
+            key-positions = <17 29>;
+        };
+
+        ComboRBrackBrace {
+            bindings = <&kp RA(N9)>;
+            key-positions = <18 30>;
+        };
+
+        ComboRPar {
+            bindings = <&kp RPAR>;
+            key-positions = <19 31>;
+        };
+
+        ComboUndo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <3 2>;
+        };
+
+        ComboRedo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <3 4>;
+        };
+
+        ComboCopy {
+            bindings = <&kp LC(C)>;
+            key-positions = <3 14>;
+        };
+
+        ComboPaste {
+            bindings = <&kp LC(V)>;
+            key-positions = <3 16>;
+        };
+
+        ComboCut {
+            bindings = <&kp LC(X)>;
+            key-positions = <14 16>;
+        };
+
+        ComboSave {
+            bindings = <&kp LC(S)>;
+            key-positions = <15 28>;
+        };
+
+        ComboChevron {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <4 17>;
+        };
+
+        ComboLChevron {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <2 13>;
+        };
+
+        ComboDQuotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <4 5>;
+        };
+
+        ComboSQuote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <1 2>;
+        };
+
+        ComboLEnter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <16 17>;
+        };
+
+        ComboREnter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <18 19>;
+        };
+
+        ComboSelAll {
+            bindings = <&kp LC(A)>;
+            key-positions = <2 4>;
+        };
+
+        ComboBackspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 19>;
+        };
+
+        ComboBackWord {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <19 20 21>;
+        };
+
+        ComboDel {
+            bindings = <&kp DEL>;
+            key-positions = <21 22>;
+        };
+
+        ComboDelWord {
+            bindings = <&kp LC(DEL)>;
+            key-positions = <21 22 23>;
+        };
+
+        ComboLeft {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <31 32>;
+        };
+
+        ComboRight {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <32 33>;
+        };
+
+        ComboLWord {
+            bindings = <&kp LC(LEFT_ARROW)>;
+            key-positions = <30 31 32>;
+        };
+
+        ComboRWord {
+            bindings = <&kp LC(RIGHT_ARROW)>;
+            key-positions = <31 32 33>;
+        };
+
+        ComboUp {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <31 20>;
+        };
+
+        ComboDown {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <20 33>;
+        };
+
+        ComboHome {
+            bindings = <&kp HOME>;
+            key-positions = <8 9>;
+        };
+
+        ComboEnd {
+            bindings = <&kp END>;
+            key-positions = <9 10>;
+        };
+
+        ComboPGUP {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <9 20>;
+        };
+
+        ComboPGDN {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <9 22>;
+        };
+
+        ComboBackslagPipe {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <16 29>;
+        };
+
+        ComboFSlashQM {
+            bindings = <&kp SLASH>;
+            key-positions = <30 19>;
+        };
+
+        ComboSCUP {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <8 10>;
+        };
+
+        ComboSCDN {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <20 22>;
+        };
+
+        ComboSCLF {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <7 9>;
+        };
+
+        ComboSCRG {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <9 11>;
+        };
+
+        ComboLine {
+            bindings = <&kp SLASH>;
+            key-positions = <34 35>;
+        };
+
+        ComboPlus {
+            bindings = <&kp PLUS>;
+            key-positions = <22 23>;
+        };
+
+        ComboAccent {
+            bindings = <&kp EQUAL>;
+            key-positions = <10 11>;
+        };
+
+        ComboRL01 {
+            bindings = <&mo 1>;
+            key-positions = <40 41>;
+        };
+
+        ComboLL01 {
+            bindings = <&mo 1>;
+            key-positions = <37 36>;
+        };
+
+        ComboL02 {
+            bindings = <&mo 2>;
+            key-positions = <40 39>;
+        };
+
+        ComboL03 {
+            bindings = <&mo 3>;
+            key-positions = <38 37>;
+        };
+
+        ComboExcl {
+            bindings = <&kp EXCL>;
+            key-positions = <7 8 21>;
+        };
+
+        ComboQMark {
+            bindings = <&kp QMARK>;
+            key-positions = <8 9 19>;
+        };
+
+        ComboAT {
+            bindings = <&kp AT>;
+            key-positions = <13 16>;
+        };
+
+        ComboBrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <20 32>;
+        };
+
+        ComboBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <14 26>;
+        };
+    };
+
+    ComboAT {
+        bindings = <&kp AT>;
+        key-positions = <13 16>;
+    };
+
+    macros {
+        MacroSelLine: MacroSelLine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "MACROSELLINE";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        L00_Base {
+            display-name = "00_Base";
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L     &kp U      &kp Y    &kp LBKT   &kp RBKT
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N     &kp E      &kp I    &kp O      &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp MINUS  &kp RSHFT
+                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &kp RALT  &kp RCTRL
+            >;
+        };
+
+        L01_NumFunc {
+            display-name = "L01_NumFunc";
+            bindings = <
+&kp TAB    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5       &trans     &kp N7    &kp N8     &kp N9  &trans  &trans
+&kp LCTRL  &kp F6    &kp F7    &kp F8    &kp F9    &kp F10      &trans     &kp N4    &kp N5     &kp N6  &trans  &trans
+&kp LSHFT  &kp LGUI  &kp LALT  &kp F11   &kp F12   &trans       &kp N0     &kp N1    &kp N2     &kp N3  &trans  &trans
+                               &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &kp RALT  &kp RSHFT
+            >;
+        };
+
+        L02_Mouse {
+            bindings = <
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans     &trans     &trans     &trans
+                                &trans          &trans           &trans    &trans  &trans  &trans
+            >;
+
+            label = "L02_Mouse";
+        };
+
+        L03_Connection {
+            bindings = <
+&bt BT_CLR  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+
+            label = "L03_Connection";
+        };
+    };
 };
