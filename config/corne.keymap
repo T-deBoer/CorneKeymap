@@ -354,7 +354,7 @@
         MacroAT: MacroAT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AT>;
+            bindings = <&kp RA(N2)>;
             label = "MACROAT";
         };
 
