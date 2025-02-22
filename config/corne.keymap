@@ -368,7 +368,7 @@
         MacroRCBrack: MacroRCBrack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&kp RA(FSLH)>;
             label = "MACRORCBRACK";
         };
     };
