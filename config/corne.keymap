@@ -347,7 +347,7 @@
         MacroBackslash: MacroBackslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N0)>;
+            bindings = <&kp RA(NON_US_BSLH)>;
             label = "MACROBACKSLASH";
         };
 
