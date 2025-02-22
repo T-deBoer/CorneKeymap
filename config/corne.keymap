@@ -231,11 +231,11 @@
         };
 
         ComboBackslagPipe {
-            bindings = <&kp RA(NON_US_BSLH)>;
-            key-positions = <16 29>;
+            bindings = <&kp LS(N7)>;
+            key-positions = <30 19>;
         };
 
-        ComboBackslagPipe {
+        ComboBackslash {
             bindings = <&MacroBackslash>;
             key-positions = <16 29>;
         };
