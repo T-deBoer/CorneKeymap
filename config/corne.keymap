@@ -166,7 +166,7 @@
         };
 
         ComboBackWord {
-            bindings = <&kp RC(BACKSPACE)>;
+            bindings = <&MacroDelWord>;
             key-positions = <19 20 21>;
         };
 
@@ -306,12 +306,12 @@
         };
 
         ComboAT {
-            bindings = <&kp RA(N2)>;
+            bindings = <&MacroAT>;
             key-positions = <13 16>;
         };
 
         ComboRBrace {
-            bindings = <&kp RA(N0)>;
+            bindings = <&MacroRCBrack>;
             key-positions = <20 32>;
         };
 
