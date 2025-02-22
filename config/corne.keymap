@@ -332,12 +332,12 @@
 
         ComboComma {
             bindings = <&kp COMMA>;
-            key-positions = <7 8 9>;
+            key-positions = <31 21>;
         };
 
         ComboPeriod {
             bindings = <&kp PERIOD>;
-            key-positions = <19 20 21>;
+            key-positions = <19 21>;
         };
     };
 
