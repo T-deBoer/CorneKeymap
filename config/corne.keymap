@@ -329,6 +329,16 @@
             bindings = <&MacroSelLine>;
             key-positions = <3 5>;
         };
+
+        ComboComma {
+            bindings = <&kp COMMA>;
+            key-positions = <7 8 9>;
+        };
+
+        ComboPeriod {
+            bindings = <&kp PERIOD>;
+            key-positions = <19 20 21>;
+        };
     };
 
     ComboAT {
