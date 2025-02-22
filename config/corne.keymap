@@ -20,66 +20,6 @@
             key-positions = <0 1>;
         };
 
-        ComboN1 {
-            bindings = <&kp N1>;
-            key-positions = <1 13>;
-        };
-
-        ComboN2 {
-            bindings = <&kp N2>;
-            key-positions = <2 14>;
-        };
-
-        ComboN3 {
-            bindings = <&kp N3>;
-            key-positions = <3 15>;
-        };
-
-        ComboN4 {
-            bindings = <&kp N4>;
-            key-positions = <4 16>;
-        };
-
-        ComboN5 {
-            bindings = <&kp N5>;
-            key-positions = <5 17>;
-        };
-
-        ComboN6 {
-            bindings = <&kp N6>;
-            key-positions = <6 18>;
-        };
-
-        ComboN7 {
-            bindings = <&kp N7>;
-            key-positions = <7 19>;
-        };
-
-        ComboN8 {
-            bindings = <&kp N8>;
-            key-positions = <8 20>;
-        };
-
-        ComboN9 {
-            bindings = <&kp N9>;
-            key-positions = <9 21>;
-        };
-
-        ComboN0 {
-            bindings = <&kp N0>;
-            key-positions = <10 22>;
-        };
-
-        Combo+ {
-            bindings = <&kp MINUS>;
-            key-positions = <11 23>;
-        };
-
-        ComboGrTi {
-            bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
-        };
-
         ComboLPar {
             bindings = <&kp LS(N8)>;
             key-positions = <28 16>;
@@ -128,6 +68,11 @@
         ComboSave {
             bindings = <&kp LC(S)>;
             key-positions = <15 28>;
+        };
+
+        ComboSelLine {
+            bindings = <&MacroSelLine>;
+            key-positions = <3 5>;
         };
 
         ComboChevron {
@@ -208,6 +153,66 @@
         ComboDown {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <20 33>;
+        };
+
+        ComboN1 {
+            bindings = <&kp N1>;
+            key-positions = <1 13>;
+        };
+
+        ComboN2 {
+            bindings = <&kp N2>;
+            key-positions = <2 14>;
+        };
+
+        ComboN3 {
+            bindings = <&kp N3>;
+            key-positions = <3 15>;
+        };
+
+        ComboN4 {
+            bindings = <&kp N4>;
+            key-positions = <4 16>;
+        };
+
+        ComboN5 {
+            bindings = <&kp N5>;
+            key-positions = <5 17>;
+        };
+
+        ComboN6 {
+            bindings = <&kp N6>;
+            key-positions = <6 18>;
+        };
+
+        ComboN7 {
+            bindings = <&kp N7>;
+            key-positions = <7 19>;
+        };
+
+        ComboN8 {
+            bindings = <&kp N8>;
+            key-positions = <8 20>;
+        };
+
+        ComboN9 {
+            bindings = <&kp N9>;
+            key-positions = <9 21>;
+        };
+
+        ComboN0 {
+            bindings = <&kp N0>;
+            key-positions = <10 22>;
+        };
+
+        Combo+ {
+            bindings = <&kp MINUS>;
+            key-positions = <11 23>;
+        };
+
+        ComboGrTi {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 25>;
         };
 
         ComboHome {
@@ -325,10 +330,6 @@
             key-positions = <11 22>;
         };
 
-        ComboSelLine {
-            bindings = <&MacroSelLine>;
-            key-positions = <3 5>;
-        };
 
         ComboComma {
             bindings = <&kp COMMA>;
