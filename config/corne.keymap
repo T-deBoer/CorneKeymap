@@ -111,7 +111,7 @@
         };
 
         ComboBackWord {
-            bindings = <&MacroDelWord>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <19 20 21>;
         };
 
@@ -241,7 +241,7 @@
         };
 
         ComboBackslash {
-            bindings = <&MacroBackslash>;
+            bindings = <&kp RA(NON_US_BSLH)>;
             key-positions = <16 29>;
         };
 
@@ -291,7 +291,7 @@
         };
 
         ComboAT {
-            bindings = <&MacroAT>;
+            bindings = <&kp RA(N2)>;
             key-positions = <13 16>;
         };
 
@@ -321,7 +321,7 @@
         };
 
         ComboRBrace {
-            bindings = <&MacroRCBrack>;
+            bindings = <&kp LS(N0)>;
             key-positions = <20 32>;
         };
 
@@ -329,7 +329,6 @@
             bindings = <&kp RBKT>;
             key-positions = <11 22>;
         };
-
 
         ComboComma {
             bindings = <&kp COMMA>;
