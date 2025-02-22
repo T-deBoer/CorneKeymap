@@ -235,9 +235,9 @@
             key-positions = <16 29>;
         };
 
-        ComboFSlashQM {
-            bindings = <&kp LS(N7)>;
-            key-positions = <30 19>;
+        ComboBackslagPipe {
+            bindings = <&MacroBackslash>;
+            key-positions = <16 29>;
         };
 
         ComboSCUP {
@@ -337,6 +337,34 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "MACROSELLINE";
+        };
+
+        MacroBackslash: MacroBackslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>;
+            label = "MACROBACKSLASH";
+        };
+
+        MacroAT: MacroAT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT>;
+            label = "MACROAT";
+        };
+
+        MacroDelWord: MacroDelWord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(BACKSPACE)>;
+            label = "MACRODELWORD";
+        };
+
+        MacroRCBrack: MacroRCBrack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>;
+            label = "MACRORCBRACK";
         };
     };
 
