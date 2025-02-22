@@ -266,7 +266,7 @@
         };
 
         ComboAposAst {
-            bindings = <&kp APOS>;
+            bindings = <&kp BSLH>;
             key-positions = <22 23>;
         };
 
