@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -322,6 +324,11 @@
             bindings = <&kp RBKT>;
             key-positions = <11 22>;
         };
+
+        ComboSelLine {
+            bindings = <&MacroSelLine>;
+            key-positions = <3 5>;
+        };
     };
 
     ComboAT {
@@ -340,7 +347,7 @@
         MacroBackslash: MacroBackslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BSLH>;
+            bindings = <&kp RA(N0)>;
             label = "MACROBACKSLASH";
         };
 
@@ -361,7 +368,7 @@
         MacroRCBrack: MacroRCBrack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RBRC>;
+            bindings = <>;
             label = "MACRORCBRACK";
         };
     };
