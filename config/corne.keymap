@@ -20,24 +20,24 @@
             key-positions = <0 1>;
         };
 
-        ComboLPar {
-            bindings = <&kp LS(N8)>;
-            key-positions = <28 16>;
+        ComboRL01 {
+            bindings = <&mo 1>;
+            key-positions = <40 41>;
         };
 
-        ComboLBrackBrace {
-            bindings = <&kp RA(N8)>;
-            key-positions = <17 29>;
+        ComboLL01 {
+            bindings = <&mo 1>;
+            key-positions = <37 36>;
         };
 
-        ComboRBrackBrace {
-            bindings = <&kp RA(N9)>;
-            key-positions = <18 30>;
+        ComboL02 {
+            bindings = <&mo 2>;
+            key-positions = <40 39>;
         };
 
-        ComboRPar {
-            bindings = <&kp LS(N9)>;
-            key-positions = <19 31>;
+        ComboL03 {
+            bindings = <&mo 3>;
+            key-positions = <38 37>;
         };
 
         ComboUndo {
@@ -280,26 +280,6 @@
             key-positions = <10 11>;
         };
 
-        ComboRL01 {
-            bindings = <&mo 1>;
-            key-positions = <40 41>;
-        };
-
-        ComboLL01 {
-            bindings = <&mo 1>;
-            key-positions = <37 36>;
-        };
-
-        ComboL02 {
-            bindings = <&mo 2>;
-            key-positions = <40 39>;
-        };
-
-        ComboL03 {
-            bindings = <&mo 3>;
-            key-positions = <38 37>;
-        };
-
         ComboExcl {
             bindings = <&kp LS(N1)>;
             key-positions = <7 8 21>;
@@ -315,14 +295,34 @@
             key-positions = <13 16>;
         };
 
-        ComboRBrace {
-            bindings = <&MacroRCBrack>;
-            key-positions = <20 32>;
-        };
-
         ComboLBrace {
             bindings = <&kp RA(N7)>;
             key-positions = <15 27>;
+        };
+
+        ComboLPar {
+            bindings = <&kp LS(N8)>;
+            key-positions = <28 16>;
+        };
+
+        ComboLBrackBrace {
+            bindings = <&kp RA(N8)>;
+            key-positions = <17 29>;
+        };
+
+        ComboRBrackBrace {
+            bindings = <&kp RA(N9)>;
+            key-positions = <18 30>;
+        };
+
+        ComboRPar {
+            bindings = <&kp LS(N9)>;
+            key-positions = <19 31>;
+        };
+
+        ComboRBrace {
+            bindings = <&MacroRCBrack>;
+            key-positions = <20 32>;
         };
 
         Combo_Umlaut {
