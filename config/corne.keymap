@@ -33,12 +33,12 @@
             key-positions = <37 36>;
         };
 
-        ComboL02 {
-            bindings = <&mo 2>;
+        ComboL03 {
+            bindings = <&mo 3>;
             key-positions = <40 39>;
         };
 
-        ComboL03 {
+        ComboL04 {
             bindings = <&mo 4>;
             key-positions = <38 37>;
         };
@@ -248,26 +248,6 @@
             key-positions = <16 29>;
         };
 
-        ComboSCUP {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <8 10>;
-        };
-
-        ComboSCDN {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <20 22>;
-        };
-
-        ComboSCLF {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <7 9>;
-        };
-
-        ComboSCRG {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <9 11>;
-        };
-
         ComboLine {
             bindings = <&kp SLASH>;
             key-positions = <34 35>;
@@ -383,9 +363,9 @@
 
         L02_Mouse {
             bindings = <
-&trans  &none  &none           &mmv MOVE_UP    &none            &none     &none   &none   &none      &none      &none      &none
+&trans  &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none     &none   &none   &none      &mkp MB4   &mkp MB5   &none
 &trans  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none
-&trans  &none  &none           &none           &none            &none     &none   &none   &none      &none      &none      &trans
+&trans  &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none     &none   &none   &none      &none      &none      &trans
                                &trans          &trans           &trans    &trans  &trans  &trans
             >;
 
