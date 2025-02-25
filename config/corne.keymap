@@ -344,7 +344,7 @@
         L00_Base {
             display-name = "00_Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L     &kp U      &kp Y    &kp LBKT  &kp SEMI
+&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI  &kp LBKT
 &kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N     &kp E      &kp I    &kp O     &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &kp RALT  &mo 2
