@@ -21,29 +21,6 @@
             key-positions = <0 1>;
         };
 
-        ComboRL01 {
-            bindings = <&mo 1>;
-            key-positions = <40 41>;
-        };
-
-        ComboLL01 {
-            bindings = <&mo 1>;
-            key-positions = <38>;
-            layers = <0>;
-        };
-
-        ComboL03 {
-            bindings = <&mo 3>;
-            key-positions = <40 39>;
-            layers = <0>;
-        };
-
-        ComboL04 {
-            bindings = <&mo 4>;
-            key-positions = <38 37>;
-            layers = <0>;
-        };
-
         ComboUndo {
             bindings = <&kp LC(Z)>;
             key-positions = <3 2>;
@@ -350,10 +327,10 @@
         L00_Base {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI  &kp LBKT
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &kp RALT  &mo 2
+&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp LBKT
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &mo 3
+                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &mo 1  &mo 2
             >;
         };
 
