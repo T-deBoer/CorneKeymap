@@ -11,8 +11,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -30,17 +28,20 @@
 
         ComboLL01 {
             bindings = <&mo 1>;
-            key-positions = <37 36>;
+            key-positions = <38>;
+            layers = <0>;
         };
 
         ComboL03 {
             bindings = <&mo 3>;
             key-positions = <40 39>;
+            layers = <0>;
         };
 
         ComboL04 {
             bindings = <&mo 4>;
             key-positions = <38 37>;
+            layers = <0>;
         };
 
         ComboUndo {
@@ -265,12 +266,12 @@
 
         ComboExcl {
             bindings = <&kp LS(N1)>;
-            key-positions = <7 8 21>;
+            key-positions = <7 21>;
         };
 
         ComboQMark {
             bindings = <&kp LS(MINUS)>;
-            key-positions = <8 9 19>;
+            key-positions = <9 19>;
         };
 
         ComboAT {
@@ -321,6 +322,11 @@
         ComboPeriod {
             bindings = <&kp PERIOD>;
             key-positions = <19 21>;
+        };
+
+        Combo_RDquotes {
+            bindings = <&kp LS(N2)>;
+            key-positions = <6 7>;
         };
     };
 
