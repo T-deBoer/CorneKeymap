@@ -349,8 +349,57 @@
         Macro_fortaelle: Macro_fortaelle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp F &kp O &kp R &kp T &kp SEMI &kp L &kp L &kp E>;
             label = "MACRO_FORTAELLE";
+        };
+
+        Macro_opleve: Macro_opleve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp P &kp L &kp E &kp V &kp E>;
+            label = "MACRO_OPLEVE";
+        };
+
+        Macro_oevelse: Macro_oevelse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp V &kp E &kp L &kp S &kp E>;
+            label = "MACRO_OEVELSE";
+        };
+
+        Macro_aendre: Macro_aendre {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI &kp N &kp D &kp R &kp E>;
+            label = "MACRO_AENDRE";
+        };
+
+        Macro_vigtig: Macro_vigtig {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp I &kp G &kp T &kp I &kp G>;
+            label = "MACRO_VIGTIG";
+        };
+
+        Macro_taenke: Macro_taenke {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp SEMI &kp N &kp K &kp E>;
+            label = "MACRO_TAENKE";
+        };
+
+        Macro_kunne: Macro_kunne {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp U &kp N &kp N &kp E>;
+            label = "MACRO_KUNNE";
+        };
+
+        Macro_chance: Macro_chance {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp A &kp N &kp C &kp E>;
+            label = "MACRO_CHANCE";
         };
     };
 
