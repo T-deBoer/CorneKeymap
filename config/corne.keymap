@@ -332,11 +332,25 @@
             label = "MACRO_ARBEJDE";
         };
 
-        Macro_Arrow: Macro_Arrow {
+        Macro_rigtig: Macro_Arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>;
+            bindings = <&kp R &kp I &kp G &kp T &kp I &kp G>;
             label = "MACRO_ARROW";
+        };
+
+        Macro_problem: macro_problem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp R &kp O &kp B &kp L &kp E &kp M>;
+            label = "MACRO_PROBLEM";
+        };
+
+        Macro_fortaelle: Macro_fortaelle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "MACRO_FORTAELLE";
         };
     };
 
@@ -387,10 +401,10 @@
 
         L04_Strings {
             bindings = <
-&kp SEMI         &kp APOS        &kp BSLH      &kp COMMA  &kp DOT              &kp FSLH    &kp GRAVE  &trans  &trans  &trans  &trans  &trans
-&kp NON_US_HASH  &Macro_arbejde  &Macro_Arrow  &kp INT7   &kp INTERNATIONAL_8  &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&trans           &trans          &trans        &trans     &trans               &trans      &trans     &trans  &trans  &trans  &trans  &trans
-                                               &trans     &trans               &trans      &trans     &trans  &trans
+&kp SEMI         &kp APOS        &kp BSLH       &kp COMMA  &kp DOT              &kp FSLH    &kp GRAVE  &trans  &trans  &trans  &trans  &trans
+&kp NON_US_HASH  &Macro_arbejde  &Macro_rigtig  &kp INT7   &kp INTERNATIONAL_8  &trans      &trans     &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans         &trans     &trans               &trans      &trans     &trans  &trans  &trans  &trans  &trans
+                                                &trans     &trans               &trans      &trans     &trans  &trans
             >;
 
             label = "Strings";
