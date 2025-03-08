@@ -305,6 +305,11 @@
             bindings = <&kp LS(N2)>;
             key-positions = <6 7>;
         };
+
+        Combo_L04 {
+            bindings = <&mo 4>;
+            key-positions = <38 39>;
+        };
     };
 
     ComboAT {
@@ -318,6 +323,20 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "MACROSELLINE";
+        };
+
+        Macro_arbejde: Macro_arbejde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp R &kp B &kp E &kp J &kp D &kp E>;
+            label = "MACRO_ARBEJDE";
+        };
+
+        Macro_Arrow: Macro_Arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>;
+            label = "MACRO_ARROW";
         };
     };
 
@@ -366,15 +385,15 @@
             label = "Connect";
         };
 
-        L04_Test {
+        L04_Strings {
             bindings = <
-&kp SEMI         &kp APOS         &kp BSLH              &kp COMMA  &kp DOT              &kp FSLH    &kp GRAVE  &trans  &trans  &trans  &trans  &trans
-&kp NON_US_HASH  &kp NON_US_BSLH  &kp NON_US_BACKSLASH  &kp INT7   &kp INTERNATIONAL_8  &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans                &trans     &trans               &trans      &trans     &trans  &trans  &trans  &trans  &trans
-                                                        &trans     &trans               &trans      &trans     &trans  &trans
+&kp SEMI         &kp APOS        &kp BSLH      &kp COMMA  &kp DOT              &kp FSLH    &kp GRAVE  &trans  &trans  &trans  &trans  &trans
+&kp NON_US_HASH  &Macro_arbejde  &Macro_Arrow  &kp INT7   &kp INTERNATIONAL_8  &trans      &trans     &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans        &trans     &trans               &trans      &trans     &trans  &trans  &trans  &trans  &trans
+                                               &trans     &trans               &trans      &trans     &trans  &trans
             >;
 
-            label = "Test";
+            label = "Strings";
         };
     };
 };
