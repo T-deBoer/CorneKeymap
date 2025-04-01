@@ -340,7 +340,7 @@
         Macro_rigtig: Macro_Arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &kp I &kp G &kp T &kp I &kp G>;
+            bindings = <&kp R &kp LS(N3)>;
             label = "MACRO_ARROW";
         };
 
