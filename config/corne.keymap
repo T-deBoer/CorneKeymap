@@ -333,7 +333,7 @@
         Macro_arbejde: Macro_arbejde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp R &kp B &kp E &kp J &kp D &kp E>;
+            bindings = <&kp A &kp LS(N3)>;
             label = "MACRO_ARBEJDE";
         };
 
