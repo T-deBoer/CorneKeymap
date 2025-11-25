@@ -19,6 +19,7 @@
         ComboESC {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            layers = <0 4 1 2>;
         };
 
         ComboUndo {
@@ -617,10 +618,10 @@
 
         L02_Mouse {
             bindings = <
-&trans  &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none     &none   &none      &mkp MCLK  &mkp MB4  &none   &none
-&trans  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &mkp LCLK  &mkp RCLK  &mkp MB5  &none   &none
-&trans  &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none     &none   &none      &none      &none     &trans  &trans
-                               &trans          &trans           &trans    &trans  &trans     &trans
+&trans  &none  &none  &none   &none   &none     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mkp MB5  &none
+&trans  &none  &none  &none   &none   &none     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &mkp MB4  &none
+&trans  &none  &none  &none   &none   &none     &none           &none           &none           &none           &trans    &trans
+                      &trans  &trans  &trans    &trans          &trans          &trans
             >;
 
             label = "Mouse";
