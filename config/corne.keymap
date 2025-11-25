@@ -305,6 +305,7 @@
         Combo_RDquotes {
             bindings = <&kp LS(N2)>;
             key-positions = <6 7>;
+            layers = <0 1 4>;
         };
 
         Combo_L04 {
@@ -315,6 +316,17 @@
         Combo_Space {
             bindings = <&kp SPACE>;
             key-positions = <38 39>;
+        };
+
+        ComboTog2 {
+            bindings = <&tog 2>;
+            key-positions = <34 35>;
+        };
+
+        ComboMMB {
+            bindings = <&mkp MCLK>;
+            key-positions = <7 9>;
+            layers = <2>;
         };
     };
 
