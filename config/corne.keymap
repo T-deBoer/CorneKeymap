@@ -641,7 +641,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L00_Colemakish {
+        L00_Base {
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J        &kp L     &kp U      &kp Y    &kp SEMI  &kp LBKT
