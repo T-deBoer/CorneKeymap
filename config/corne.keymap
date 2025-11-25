@@ -593,14 +593,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L00_Base {
+        L00_Colemakish {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J        &kp L  &kp U      &kp Y    &kp SEMI  &kp LBKT
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M        &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &mo 4
-                         &kp LGUI  &kp LALT  &kp SPACE    &lt 4 SPACE  &mo 1  &mo 2
+&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp LBKT
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &sl 4
+                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &mo 1  &mo 2
             >;
+
+            label = "Colemakish";
         };
 
         L01_NumFunc {
@@ -635,7 +637,7 @@
             label = "Connect";
         };
 
-        L04_Strings1 {
+        L04_Qwerty {
             bindings = <
 &trans  &trans     &trans     &Macro_f1  &Macro_p1  &Macro_b1    &trans     &trans     &trans     &trans     &Macro_ae1  &trans
 &trans  &Macro_a1  &Macro_r1  &trans     &Macro_t1  &Macro_g1    &trans     &trans     &Macro_e1  &Macro_i1  &Macro_o1   &Macro_oe1
@@ -643,7 +645,7 @@
                               &trans     &trans     &trans       &trans     &trans     &trans
             >;
 
-            label = "Strg 1";
+            label = "Qwerty";
         };
     };
 };
