@@ -547,13 +547,6 @@
             label = "MACRO_N1";
         };
 
-        Macro_o1: Macro_o1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp LS(N3)>;
-            label = "MACRO_O1";
-        };
-
         Macro_o2: Macro_o2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
