@@ -598,7 +598,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J        &kp L     &kp U      &kp Y    &kp SEMI  &kp LBKT
 &kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M        &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K        &kp H     &kp COMMA  &kp DOT  &kp FSLH  &tog 4
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K        &kp H     &kp COMMA  &kp DOT  &tog 1    &tog 4
                          &kp LGUI  &kp LALT  &kp SPACE    &lt 1 SPACE  &kp RALT  &mo 2
             >;
 
@@ -617,10 +617,10 @@
 
         L02_Mouse {
             bindings = <
-&trans  &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none     &none   &none   &none      &mkp MCLK  &mkp RCLK  &none
-&trans  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &none   &mkp LCLK  &mkp MB4   &mkp MB5   &none
-&trans  &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none     &none   &none   &none      &none      &none      &trans
-                               &trans          &trans           &trans    &trans  &trans  &trans
+&trans  &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none     &none   &none      &mkp MCLK  &mkp MB4  &none   &none
+&trans  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &mkp LCLK  &mkp RCLK  &mkp MB5  &none   &none
+&trans  &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none     &none   &none      &none      &none     &trans  &trans
+                               &trans          &trans           &trans    &trans  &trans     &trans
             >;
 
             label = "Mouse";
