@@ -349,11 +349,18 @@
         ComboTog2 {
             bindings = <&tog 2>;
             key-positions = <34 35>;
+            layers = <0 1 4>;
         };
 
         ComboMMB {
             bindings = <&mkp MCLK>;
             key-positions = <7 9>;
+            layers = <2>;
+        };
+
+        ComboTog0 {
+            bindings = <&tog 0>;
+            key-positions = <34 35>;
             layers = <2>;
         };
     };
@@ -651,7 +658,7 @@
             bindings = <
 &trans  &kp F1  &kp F2   &kp F3    &kp F4    &none        &none      &kp N7  &kp N8  &kp N9  &none   &none
 &trans  &kp F5  &kp F6   &kp F7    &kp F8    &none        &none      &kp N4  &kp N5  &kp N6  &none   &none
-&trans  &kp F9  &kp F10  &kp F11   &kp F12   &none        &kp N0     &kp N1  &kp N2  &kp N3  &tog 0  &kp RSHIFT
+&trans  &kp F9  &kp F10  &kp F11   &kp F12   &none        &kp N0     &kp N1  &kp N2  &kp N3  &tog 0  &tog 4
                          &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &trans  &none
             >;
         };
@@ -660,7 +667,7 @@
             bindings = <
 &trans  &none  &none  &none   &none   &none     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mkp MB5  &none
 &trans  &none  &none  &none   &none   &none     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &mkp MB4  &none
-&trans  &none  &none  &none   &none   &none     &none           &none           &none           &none           &trans    &trans
+&trans  &none  &none  &none   &none   &none     &none           &none           &none           &none           &tog 1    &tog 4
                       &trans  &trans  &trans    &trans          &trans          &trans
             >;
 
