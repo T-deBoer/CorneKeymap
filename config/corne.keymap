@@ -353,7 +353,7 @@
 
         ComboMMB {
             bindings = <&mkp MCLK>;
-            key-positions = <7 9>;
+            key-positions = <40 41>;
             layers = <3>;
         };
     };
@@ -669,10 +669,10 @@
 
         L_Mouse {
             bindings = <
-&trans  &none  &none  &none   &none   &none     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5  &none
-&trans  &none  &none  &none   &none   &none     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4  &none
-&trans  &none  &none  &none   &none   &none     &none           &none           &none           &none            &trans    &trans
-                      &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &none  &none  &none   &none   &none     &none   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp MB5  &none
+&trans  &none  &none  &none   &none   &none     &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4  &none
+&trans  &none  &none  &none   &none   &none     &none   &none           &none           &none            &trans    &trans
+                      &trans  &trans  &trans    &trans  &mkp LCLK       &mkp RCLK
             >;
 
             label = "Mouse";
