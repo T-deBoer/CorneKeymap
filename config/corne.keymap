@@ -341,12 +341,6 @@
             layers = <0 2 1 3>;
         };
 
-        Combo_RDquotes {
-            bindings = <&kp LS(N2)>;
-            key-positions = <6 7>;
-            layers = <0 2 1 3>;
-        };
-
         Combo_MoConnects {
             bindings = <&mo 5>;
             key-positions = <40 41>;
