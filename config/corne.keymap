@@ -336,7 +336,7 @@
             layers = <0 2 1>;
         };
 
-        Combo_L04 {
+        Combo_MoConnects {
             bindings = <&mo 5>;
             key-positions = <40 41>;
         };
@@ -346,14 +346,14 @@
             key-positions = <38 39>;
         };
 
-        ComboTog3 {
+        ComboTogMouse {
             bindings = <&tog 4>;
             key-positions = <34 35>;
         };
 
-        ComboMMB {
-            bindings = <&mkp MCLK>;
-            key-positions = <40 41>;
+        ComboMoMouse {
+            bindings = <&mo 4>;
+            key-positions = <36 37>;
             layers = <4>;
         };
 
