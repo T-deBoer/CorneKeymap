@@ -19,7 +19,7 @@
         ComboESC {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2 4>;
         };
 
         ComboUndo {
@@ -246,7 +246,7 @@
 
         ComboLine {
             bindings = <&kp SLASH>;
-            key-positions = <34 33>;
+            key-positions = <6 7>;
             layers = <0 2 1>;
         };
 
@@ -337,7 +337,7 @@
         };
 
         Combo_L04 {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <40 41>;
         };
 
@@ -347,14 +347,20 @@
         };
 
         ComboTog3 {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <34 35>;
         };
 
         ComboMMB {
             bindings = <&mkp MCLK>;
             key-positions = <40 41>;
-            layers = <3>;
+            layers = <4>;
+        };
+
+        Combo_Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <33 21>;
+            layers = <0 2 1>;
         };
     };
 
@@ -378,45 +384,59 @@
         L_Base {
             display-name = "Colemakish";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J        &kp L     &kp U      &kp Y    &kp SEMI  &kp LBKT
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M        &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K        &kp H     &kp COMMA  &kp DOT  &tog 2    &tog 1
-                         &kp LGUI  &kp LALT  &kp SPACE    &lt 2 SPACE  &kp RALT  &mo 3
+&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J      &kp L  &kp U    &kp Y     &kp SEMI  &kp LBKT
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M      &kp N  &kp E    &kp I     &kp O     &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K      &kp H  &kp SQT  &kp RALT  &tog 2    &tog 1
+                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE  &mo 2  &mo 3
             >;
 
-            label = "Base";
+            label = "BSE";
         };
 
         L_Qwerty {
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOSTROPHE
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &trans    &trans
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I   &kp O   &kp P     &kp LBKT
+&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K   &kp L   &kp SEMI  &kp APOSTROPHE
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &none   &trans  &trans    &trans
                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Qwerty";
+            label = "QWE";
         };
 
-        L_NumFunc {
+        L_Numbers {
             display-name = "NumFunc";
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3    &kp F4    &none        &kp KP_EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS         &kp KP_MINUS
-&trans  &kp F5  &kp F6   &kp F7    &kp F8    &none        &none         &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK  &kp KP_DIVIDE
-&trans  &kp F9  &kp F10  &kp F11   &kp F12   &none        &kp N0        &kp N1  &kp N2  &kp N3  &trans           &trans
-                         &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &trans  &trans
+&trans  &kp F1    &kp N7  &kp N8  &kp N9  &none       &kp EQUAL  &kp PLUS   &kp MINUS  &kp CARET  &none   &none
+&trans  &kp LPAR  &kp N4  &kp N5  &kp N6  &kp RPAR    &kp HASH   &kp ASTRK  &kp SLASH  &kp PRCNT  &none   &none
+&trans  &kp N0    &kp N1  &kp N2  &kp N3  &none       &none      &none      &none      &trans     &trans  &trans
+                          &trans  &trans  &trans      &trans     &trans     &trans
             >;
+
+            label = "NUM";
+        };
+
+        L_Function {
+            display-name = "NumFunc";
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none   &none   &none   &none   &none   &none
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none   &none   &none   &none   &none   &none
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none   &none   &none   &trans  &trans  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "FNC";
         };
 
         L_Mouse {
             bindings = <
-&trans  &none  &none  &none   &none   &none     &none   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp MB5  &none
-&trans  &none  &none  &none   &none   &none     &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4  &none
-&trans  &none  &none  &none   &none   &none     &none   &none           &none           &none            &trans    &trans
-                      &trans  &trans  &trans    &trans  &mkp LCLK       &mkp RCLK
+&trans  &none  &none  &none   &none   &none     &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp MB5  &none
+&trans  &none  &none  &none   &none   &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4  &none
+&trans  &none  &none  &none   &none   &none     &none      &none           &none           &trans           &trans    &trans
+                      &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
 
-            label = "Mouse";
+            label = "MSE";
         };
 
         L_Connection {
@@ -427,7 +447,7 @@
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
-            label = "Connect";
+            label = "CNC";
         };
     };
 };
